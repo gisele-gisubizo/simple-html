@@ -1,0 +1,139 @@
+body {
+    margin: 0;
+    font-family: 'Lora', serif;
+    background-color: #ffffff;
+    color: #2d2d2d;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #4A90E2;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    color: #357ABD;
+}
+
+/* Header styles */
+header {
+    background-color: #2A4066;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo h1 {
+    font-size: 2.5rem;
+    color: #ffffff;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+nav a {
+    color: #E0E7FF;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+nav a.active, nav a:hover {
+    color: #A3BFFA;
+    border-bottom: 2px solid #A3BFFA;
+}
+/* Form styles for login and signup */
+.form-container {
+    max-width: 500px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form label {
+    font-weight: 600;
+    font-size: 1rem;
+    text-align: left;
+}
+
+.form input {
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.form input:focus {
+    outline: none;
+    border-color: #2A4066;
+    box-shadow: 0 0 5px rgba(42, 64, 102, 0.3);
+}
+
+.form button {
+    background-color: #2A4066;
+    color: #ffffff;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.form button:hover {
+    background-color: #1E2A44;
+    transform: translateY(-2px);
+}
+footer {
+    background-color: #2A4066;
+    color: #ffffff;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.social-icon {
+    font-size: 1.5rem;
+    color: #ffffff;
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #A3BFFA;
+    transform: scale(1.2);
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 480px) {
+    .form-container {
+        padding: 1rem;
+        margin: 2rem auto;
+    }
+}
