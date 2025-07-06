@@ -13,17 +13,17 @@ h1, h2, h3, h4 {
 
 a {
     text-decoration: none;
-    color: #003087;
+    color: #4A90E2; /* Lighter blue for links to contrast with header */
     transition: all 0.3s ease;
 }
 
 a:hover {
-    color: #001d6c;
+    color: #357ABD; /* Slightly darker blue for hover state */
 }
 
 /* Header styles */
 header {
-    background-color: #003087;
+    background-color: #2A4066; /* Darker header background for contrast */
     padding: 1.5rem;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -44,14 +44,14 @@ nav ul {
 }
 
 nav a {
-    color: #ffffff;
+    color: #E0E7FF; /* Light text for visibility against dark header */
     font-weight: 600;
     font-size: 1.1rem;
 }
 
 nav a.active, nav a:hover {
-    color: #001d6c;
-    border-bottom: 2px solid #001d6c;
+    color: #A3BFFA; /* Lighter hover color for better contrast */
+    border-bottom: 2px solid #A3BFFA;
 }
 
 /* Featured news section */
@@ -84,7 +84,7 @@ nav a.active, nav a:hover {
 .read-more {
     display: inline-block;
     padding: 0.5rem 1rem;
-    background-color: #003087;
+    background-color: #2A4066;
     color: #ffffff;
     border-radius: 5px;
     margin-top: 1rem;
@@ -92,7 +92,7 @@ nav a.active, nav a:hover {
 }
 
 .read-more:hover {
-    background-color: #001d6c;
+    background-color: #1E2A44;
     transform: translateY(-2px);
 }
 
@@ -106,6 +106,7 @@ main {
     padding: 0 1rem;
 }
 
+/* News grid styles for Latest Stories and Trending Now */
 .news-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -126,9 +127,11 @@ article:hover {
 
 article img {
     max-width: 100%;
-    height: auto;
+    height: 200px; /* Fixed height for consistent sizing */
+    object-fit: cover; /* Ensures images fit without distortion */
     border-radius: 8px;
     margin-bottom: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 article h3 {
@@ -150,7 +153,7 @@ article p {
 
 .sidebar h3 {
     font-size: 1.6rem;
-    border-bottom: 2px solid #003087;
+    border-bottom: 2px solid #2A4066;
     padding-bottom: 0.5rem;
 }
 
@@ -158,10 +161,10 @@ article p {
     padding: 1rem;
 }
 
-/* Form styles */
+/* Form styles with adjusted margins */
 .form-container {
     max-width: 500px;
-    margin: 2rem auto;
+    margin: 3rem auto; /* Increased margin for better spacing */
     padding: 2rem;
     background-color: #ffffff;
     border-radius: 10px;
@@ -172,7 +175,7 @@ article p {
 .form {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 1.5rem; /* Increased gap for better spacing */
 }
 
 .form label {
@@ -191,12 +194,12 @@ article p {
 
 .form input:focus {
     outline: none;
-    border-color: #003087;
-    box-shadow: 0 0 5px rgba(0, 48, 135, 0.3);
+    border-color: #2A4066;
+    box-shadow: 0 0 5px rgba(42, 64, 102, 0.3);
 }
 
 .form button {
-    background-color: #003087;
+    background-color: #2A4066;
     color: #ffffff;
     padding: 0.75rem;
     border: none;
@@ -207,13 +210,13 @@ article p {
 }
 
 .form button:hover {
-    background-color: #001d6c;
+    background-color: #1E2A44;
     transform: translateY(-2px);
 }
 
 /* Footer styles */
 footer {
-    background-color: #003087;
+    background-color: #2A4066;
     color: #ffffff;
     text-align: center;
     padding: 1.5rem;
@@ -234,7 +237,7 @@ footer {
 }
 
 .social-icon:hover {
-    color: #001d6c;
+    color: #A3BFFA;
     transform: scale(1.2);
 }
 
@@ -273,5 +276,6 @@ footer {
 
     .form-container {
         padding: 1rem;
+        margin: 2rem auto; /* Adjusted margin for smaller screens */
     }
 }
